@@ -10,7 +10,7 @@
         <a href="#" class="logo">Recipe Site</a>
 
         <nav>
-            <a href="/recipes/potroast.html"
+            <a href="/recipes/recipes.html">Recipes</a>
         </nav>
 
         <form role="search">
@@ -20,9 +20,44 @@
         </form>
     </header>
 
-    <h1>Odin's Recipes</h1>
+    <main>
+        <h1>Odin's Recipes</h1>
 
+        <section aria-label="Featured">
+            <h2>Browse recipes, filtered by what's important to you!</h2>
+        </section>
 
+        <div>
+            <aside aria-label="Filters">
+                <h2>Filter</h2>
+                <fieldset>
+                    <legend>Meal Type</legend>
+                    <label><input type="checkbox" name="meal" value="breakfast">Breakfast</label>
+                    <label><input type="checkbox" name="meal" value="lunch">Lunch</label>
+                    <label><input type="checkbox" name="meal" value="dinner">Dinner</label>
+                    <label><input type="checkbox" name="meal" value="dessert">Dessert</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Diet</legend>
+                    <label><input type="checkbox" name="diet" value="vegetarian">Vegetarian</label>
+                    <label><input type="checkbox" name="diet" value="vegan">Vegan</label>
+                    <label><input type="checkbox" name="diet" value="gluten-free">Gluten-free</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cook Time</legend>
+                    <label><input type="radio" name="time" value="30">30 Minutes</label>
+                    <label><input type="radio" name="time" value="60">1 Hour</label>
+                </fieldset>
+            </aside>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Recipe Site</p>
+    </footer>
 
 </body>
 </html>
